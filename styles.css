@@ -1,0 +1,354 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    background-color: #f0f0f0;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(135deg, #04d4f9, #03d4f9);
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFCC00;
+}
+
+/* Hero section */
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    background-color: #08e0f4;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #06fdfd;
+}
+
+/* About section */
+#about {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#about h2 {
+    color: #07ccef;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services section */
+#services {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #09ccee;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #04c6f6;
+}
+
+.service-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Contact section */
+#contact {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #0ac8f3;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #05c6fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #06d1f5;
+}
+
+/* Footer */
+footer {
+    background: #03d2f2;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero h2 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+    }
+}
+/* Founder Section */
+#founder {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#founder h2 {
+    color: #07ccef;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#founder-btn {
+    background-color: #07ccef;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#founder-btn:hover {
+    background-color: #04d4f9;
+}
+
+#founder-info {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline Section */
+#timeline {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#timeline h2 {
+    color: #09ccee;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h3 {
+    font-size: 24px;
+    color: #07ccef;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 16px;
+    color: #555;
+}
+/* General styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    background-image: url('background.jpg'); /* Add a subtle background image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Logo styling */
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+/* Hero section */
+#hero {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+/* Service link buttons */
+.service-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #05c6fc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.service-link:hover {
+    background-color: #04b0e8;
+}
